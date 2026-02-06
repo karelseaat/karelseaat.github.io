@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karelseaat repos</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #bb86fc;
+            --secondary-text: #b0b0b0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        h1.site-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid transparent;
+            --card-hover-color: var(--accent-color);
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--card-shadow-color, rgba(187, 134, 252, 0.15));
+            border-color: var(--card-hover-color);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            transition: color 0.3s ease;
+            margin-right: 40px; /* Make space for icon */
+        }
+        .card:hover h2 {
+            color: var(--card-hover-color);
+        }
+        .card-icon {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 2rem;
+            color: var(--secondary-text);
+            opacity: 0.5;
+            transition: opacity 0.3s ease, color 0.3s ease;
+        }
+        .card:hover .card-icon {
+            opacity: 1;
+            color: var(--card-hover-color);
+        }
+        .card p {
+            color: var(--secondary-text);
+            flex-grow: 1;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #121212;
+            background-color: var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .card a:hover {
+            background-color: var(--card-hover-color);
+            filter: brightness(1.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="site-title">karelseaat repos</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Meshtastic-Simulator</h2>
+            <p>A Python-based simulation tool for the Meshtastic mesh radio network.</p>
+            <a href="https://github.com/karelseaat/Meshtastic-Simulator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-android-plain card-icon"></i>
+            <h2>Binary Vector Graphics - Logo Design</h2>
+            <p>This repository contains the source files for a vector graphics logo design created using Android&#39;s `&lt;Vector&gt;` library and Kotlin programming language. The logo is designed in two colors: dark red ...</p>
+            <a href="https://github.com/karelseaat/androidtosvg" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>E-Commerce API</h2>
+            <p>A modern Laravel API application for managing products and orders. Built with Laravel 12, this API provides RESTful endpoints for e-commerce operations.</p>
+            <a href="https://github.com/karelseaat/api-app" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Python CLI API Tester</h2>
+            <p>A simple, command-line API testing tool that allows you to define and run HTTP requests against different environments using a straightforward TOML configuration file.</p>
+            <a href="https://github.com/karelseaat/apipython" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>GrblSimulator - A Graphical Interface for GRBL Simulation</h2>
+            <p>GrblSimulator is a user-friendly graphical interface designed to simulate and visualize the operation of GRBL, an open-source CNC machine controller. The application allows users to manipulate the ...</p>
+            <a href="https://github.com/karelseaat/camsimulator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Project Title: My Application Management System (MAMS)</h2>
+            <p>A comprehensive and flexible application management system for efficiently handling diverse applications, their metadata, and user interactions. MAMS is built using Python and SQLAlchemy, ensuring ...</p>
+            <a href="https://github.com/karelseaat/collectplayemails" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-cplusplus-plain card-icon"></i>
+            <h2>Project Overview</h2>
+            <p>This project is a collection of C++ classes for game development, focusing on essential components such as `Timer`, `Vector2D`, and `Animation`. These classes are designed to facilitate the creatio...</p>
+            <a href="https://github.com/karelseaat/datapanic" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>dataset_alter_tools</h2>
+            <p>A practical Python toolset for modifying and altering datasets, aimed at simplifying your machine learning workflow. This repository encompasses two main tools: `crop-images.py` and `xml_to_yolo.py`.</p>
+            <a href="https://github.com/karelseaat/dataset_alter_tools" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>Feeds and Speeds Calculator</h2>
+            <p>This is a web-based application designed to help machinists and CNC programmers determine the optimal spindle speed (RPM) and feed rate for their cutting operations. The application supports both I...</p>
+            <a href="https://github.com/karelseaat/feeds-and-speeds-calculator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>feedsandspeeds</h2>
+            <p>A versatile Python script for calculating optimal feed rates and chip loads based on the number of flutes, spindle RPM, and material type. This repository hosts three essential files: `feedsandspee...</p>
+            <a href="https://github.com/karelseaat/feedsandspeeds" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-php-plain card-icon"></i>
+            <h2>Frequency Converter - A Simple PHP Application for Frequency Conversion</h2>
+            <p>This repository contains a simple PHP application designed to convert between different frequencies. The project is a self-contained solution for converting various frequency units into each other,...</p>
+            <a href="https://github.com/karelseaat/frequency-to-wavelength-calculator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>Historical Trip Data Analysis API (Laravel Lumen)</h2>
+            <p>Welcome to the Historical Trip Data Analysis API, a powerful tool for querying, filtering, and performing analytics on taxi trip data from the New York City Taxi &amp; Limousine Commission (NYC TLC). T...</p>
+            <a href="https://github.com/karelseaat/historical-trip-data" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-github-original card-icon"></i>
+            <h2>imagegenerator</h2>
+            <p>Welcome to the `imagegenerator` repository, a Python-based application for compositing images with customizable backgrounds, midgrounds, and foregrounds. This tool can benefit developers working on...</p>
+            <a href="https://github.com/karelseaat/imagegenerator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-github-original card-icon"></i>
+            <h2>1 Image splitter</h2>
+            <p>This project will spit images in a yes or not category. It is a tkinter gui app where you can choose a sourcemap (lots of images that load will take a lot of time) it is a tool to preliminary filte...</p>
+            <a href="https://github.com/karelseaat/imagesplitter" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Kalender-Python</h2>
+            <p>A Python script for generating SVG calendars to print</p>
+            <a href="https://github.com/karelseaat/kalender-python" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-bash-plain card-icon"></i>
+            <h2>KINK FM Recently Played Songs</h2>
+            <p>This project provides a shell script to fetch and display the most recently played songs from the KINK FM radio station website ([kink.nl/gedraaid/kink](https://kink.nl/gedraaid/kink)) directly in ...</p>
+            <a href="https://github.com/karelseaat/kink_gedraaid" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>Analytics Dashboard</h2>
+            <p>A modern, headless analytics dashboard API built with Laravel 12 and Vite. This application provides a RESTful API for managing analytics data and metrics without frontend Blade templates.</p>
+            <a href="https://github.com/karelseaat/laravel_dashboard_app" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>LensCorrect Repository</h2>
+            <p>Welcome to the LensCorrect repository, a Python-based application that corrects lens distortions in photographs of a checkerboard pattern. This tool utilizes OpenCV for image processing and Beautif...</p>
+            <a href="https://github.com/karelseaat/lenscorrect" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>macropad_macros</h2>
+            <p>Welcome to the macropad_macros GitHub repository! This project contains a collection of customizable hotkey configurations for the Adafruit Feather RGB670 QWERTY Macro Pad, an ultra-compact program...</p>
+            <a href="https://github.com/karelseaat/macropad_macros" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-flask-original card-icon"></i>
+            <h2>Material Dashboard Lite - Backend</h2>
+            <p>Welcome to the backend repository for Material Dashboard Lite, a free-to-use Material Design admin template based on Google&#39;s Material Design Lite library. This project aims to provide a responsive...</p>
+            <a href="https://github.com/karelseaat/material-pure-flask" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>MeshCore Simulator</h2>
+            <p>A fully functional Python-based simulator for the MeshCore mesh network protocol. This tool allows developers to model complex mesh topologies with clients and repeaters, visualize signal propagati...</p>
+            <a href="https://github.com/karelseaat/meshcore-simulator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-github-original card-icon"></i>
+            <h2>micro-python-sketches</h2>
+            <p>Welcome to the `micro-python-sketches` repository, a collection of examples for developing custom projects using MicroPython on ESP8266-based devices. This repository includes various scripts demon...</p>
+            <a href="https://github.com/karelseaat/micro-python-sketches" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>Multi-Tenant SaaS API for a Monitoring Service</h2>
+            <p>This project is the core backend for a Software-as-a-Service (SaaS) platform where companies can monitor the uptime and performance of their websites. It&#39;s built with Lumen and designed to handle m...</p>
+            <a href="https://github.com/karelseaat/monitoring-api" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-php-plain card-icon"></i>
+            <h2>MonteCarloSimulation Lumen Project</h2>
+            <p>This repository contains a Lumen PHP framework project implementing a Monte Carlo Simulation service. The project is designed to provide developers with an efficient way to perform complex simulati...</p>
+            <a href="https://github.com/karelseaat/monte-carlo-api" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>MovieGraph - Film Data &amp; Analytics API</h2>
+            <p>This project is a Lumen-based API for exploring movies, actors, and their intricate relationships, effectively acting as a private IMDb analytics engine. It leverages public IMDb datasets to provid...</p>
+            <a href="https://github.com/karelseaat/movie-graph-api" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-github-original card-icon"></i>
+            <h2>mpcncindicator</h2>
+            <p>This repository contains the source code for a custom indicator light system for a CNC machine, specifically designed to communicate with a Telnet server running on a separate device.</p>
+            <a href="https://github.com/karelseaat/mpcncindicator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-html5-plain card-icon"></i>
+            <h2>mqqt-temp-sens</h2>
+            <p>A comprehensive IoT solution for temperature and humidity sensing using the MQTT protocol with a captive portal for easy configuration of network settings and MQTT credentials.</p>
+            <a href="https://github.com/karelseaat/mqqt-temp-sens" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-bash-plain card-icon"></i>
+            <h2>Nim Process Manager</h2>
+            <p>A simple command-line tool written in Nim for starting and managing background (daemon) processes. It is specifically designed to be used by automated agents or LLMs to execute non-blocking shell c...</p>
+            <a href="https://github.com/karelseaat/nim_process_manager" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>osmtodb - Extracting Bicycle Shops from OpenStreetMap Data and Storing in SQLite Database</h2>
+            <p>Welcome to the `osmtodb` project, a Python application designed for extracting bicycle shops from an OpenStreetMap (OSM) map file and storing their locations in a SQLite database. This tool serves ...</p>
+            <a href="https://github.com/karelseaat/osmtodb" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-html5-plain card-icon"></i>
+            <h2>Py Informer</h2>
+            <p>A MicroPython-based ESP32 project for creating dynamic access points with a web-based configuration interface.</p>
+            <a href="https://github.com/karelseaat/py-informer" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Project Overview</h2>
+            <p>This repository contains the source code for a custom network configuration and lighting control system implemented in Python for LoRaWAN devices, specifically a LoPy board. The project is divided ...</p>
+            <a href="https://github.com/karelseaat/python-screen-avg" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-laravel-original card-icon"></i>
+            <h2>Resistor Color Code Calculator</h2>
+            <p>This Laravel application provides a tool for electronics enthusiasts and professionals to work with resistor color codes. It can calculate the resistance value from the color bands and determine th...</p>
+            <a href="https://github.com/karelseaat/resistor-color-code-calculator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>roadlength</h2>
+            <p>This repository contains a Python script (`testit.py`) designed to calculate the total length of roads within a specified boundary using OpenStreetMap data.</p>
+            <a href="https://github.com/karelseaat/roadlength" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>service_discover GitHub Repository</h2>
+            <p>Welcome to `service_discover`, a simple UDP-based client-server discovery system in Python. This project is designed for developers seeking an easy way to discover available services on a network.</p>
+            <a href="https://github.com/karelseaat/service_discover" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>sitechecker GitHub Repository</h2>
+            <p>This repository hosts a Python script named `sitechecker` designed to evaluate the functionality and structure of web pages for the domains `six-dots.app` and `trade.six-dots.app`. The project empl...</p>
+            <a href="https://github.com/karelseaat/sitechecker" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-flask-original card-icon"></i>
+            <h2>1 Trade A Rate</h2>
+            <p>A project that lets you trade a rating for one of your android apps with somebody else that also wants a android app rated. Add you app in this web tool or pick an other trading that is pending. Wh...</p>
+            <a href="https://github.com/karelseaat/tradearate" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Trello Mutator</h2>
+            <p>This repository contains a Python command-line tool designed to enhance the management of your Trello boards by integrating with the Trello API, the Ollama API, and providing intelligent suggestion...</p>
+            <a href="https://github.com/karelseaat/trello_mutator" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>1 trellocopy</h2>
+            <p>A python service (linux only for now) that allows you to copy to a trello list and to paste from a trello list. With only 2 shortcuts (Crtl+Alt+c and Ctrl+Alt+v) First Crtl+Alt+c and input the name...</p>
+            <a href="https://github.com/karelseaat/trellocopy" target="_blank">View Details</a>
+        </div>
+        
+        <div class="card">
+            <i class="devicon-python-plain card-icon"></i>
+            <h2>Wekkel - Alarm Clock and Smart Device Framework for MicroPython</h2>
+            <p>Wekkel is an incomplete project that aims to create a smart alarm clock with additional features such as weather, stock prices, and local temperature display on a microcontroller using Micropython....</p>
+            <a href="https://github.com/karelseaat/wekkel" target="_blank">View Details</a>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Just one more repo bro.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                // Generate random hue
+                const hue = Math.floor(Math.random() * 360);
+                const color = `hsl(${hue}, 80%, 70%)`;
+                const shadowColor = `hsla(${hue}, 80%, 70%, 0.25)`;
+                
+                card.style.setProperty('--card-hover-color', color);
+                card.style.setProperty('--card-shadow-color', shadowColor);
+            });
+        });
+    </script>
+</body>
+</html>
