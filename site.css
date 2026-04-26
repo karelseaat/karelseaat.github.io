@@ -24,32 +24,9 @@ body {
     margin: 0 auto;
 }
 
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
-}
-
-.topbar a,
 .nav-card,
 .card a {
     text-decoration: none;
-}
-
-.back-link {
-    color: var(--secondary-text);
-    border: 1px solid #333;
-    border-radius: 999px;
-    padding: 8px 14px;
-    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
-}
-
-.back-link:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    background: rgba(255, 255, 255, 0.02);
 }
 
 .hero {
