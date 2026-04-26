@@ -3,6 +3,7 @@
     --card-bg: #1e1e1e;
     --text-color: #e0e0e0;
     --accent-color: #bb86fc;
+    --accent-shadow: rgba(187, 134, 252, 0.15);
     --secondary-text: #b0b0b0;
 }
 
@@ -17,6 +18,31 @@ body {
     margin: 0;
     padding: 40px 24px;
     line-height: 1.6;
+}
+
+body[data-page="index"] {
+    --accent-color: #bb86fc;
+    --accent-shadow: rgba(187, 134, 252, 0.15);
+}
+
+body[data-page="arc"] {
+    --accent-color: #67d4ff;
+    --accent-shadow: rgba(103, 212, 255, 0.18);
+}
+
+body[data-page="veil"] {
+    --accent-color: #f3b35d;
+    --accent-shadow: rgba(243, 179, 93, 0.18);
+}
+
+body[data-page="drift"] {
+    --accent-color: #5fe0a9;
+    --accent-shadow: rgba(95, 224, 169, 0.18);
+}
+
+body[data-page="hollow"] {
+    --accent-color: #ff7caa;
+    --accent-shadow: rgba(255, 124, 170, 0.18);
 }
 
 .site-shell {
@@ -65,7 +91,7 @@ body {
     border: 1px solid transparent;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     --card-hover-color: var(--accent-color);
-    --card-shadow-color: rgba(187, 134, 252, 0.15);
+    --card-shadow-color: var(--accent-shadow);
     position: relative;
     overflow: hidden;
 }
